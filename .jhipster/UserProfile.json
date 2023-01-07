@@ -1,0 +1,51 @@
+{
+  "applications": ["Jive"],
+  "changelogDate": "20230107164536",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "user_profile",
+  "fields": [
+    {
+      "fieldName": "displayName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profileImage",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserProfile",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "userMessage",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "userMessage",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "channelMember",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "channelMember",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "channelMessage",
+      "otherEntityRelationshipName": "userProfile",
+      "relationshipName": "channelMessage",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

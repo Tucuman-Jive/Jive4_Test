@@ -1,0 +1,35 @@
+{
+  "applications": ["Jive"],
+  "changelogDate": "20230107164540",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "user_message",
+  "fields": [
+    {
+      "fieldName": "recipientID",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UserMessage",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "userMessage",
+      "relationshipName": "userProfile",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

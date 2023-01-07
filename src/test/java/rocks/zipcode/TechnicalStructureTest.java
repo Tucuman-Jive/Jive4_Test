@@ -9,7 +9,7 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-@AnalyzeClasses(packagesOf = Jive4TestApp.class, importOptions = DoNotIncludeTests.class)
+@AnalyzeClasses(packagesOf = JiveApp.class, importOptions = DoNotIncludeTests.class)
 class TechnicalStructureTest {
 
     // prettier-ignore
@@ -29,7 +29,7 @@ class TechnicalStructureTest {
         .whereLayer("Persistence").mayOnlyBeAccessedByLayers("Service", "Security", "Web", "Config")
         .whereLayer("Domain").mayOnlyBeAccessedByLayers("Persistence", "Service", "Security", "Web", "Config")
 
-        .ignoreDependency(belongToAnyOf(Jive4TestApp.class), alwaysTrue())
+        .ignoreDependency(belongToAnyOf(JiveApp.class), alwaysTrue())
         .ignoreDependency(alwaysTrue(), belongToAnyOf(
             rocks.zipcode.config.Constants.class,
             rocks.zipcode.config.ApplicationProperties.class

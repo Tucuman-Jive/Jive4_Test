@@ -1,0 +1,27 @@
+{
+  "jiveApp": {
+    "channelMessage": {
+      "home": {
+        "title": "Channel Messages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Channel Message",
+        "createOrEditLabel": "Create or edit a Channel Message",
+        "notFound": "No Channel Messages found"
+      },
+      "created": "A new Channel Message is created with identifier {{ param }}",
+      "updated": "A Channel Message is updated with identifier {{ param }}",
+      "deleted": "A Channel Message is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Channel Message {{ id }}?"
+      },
+      "detail": {
+        "title": "Channel Message"
+      },
+      "id": "ID",
+      "message": "Message",
+      "updatedAt": "Updated At",
+      "userProfile": "User Profile",
+      "channel": "Channel"
+    }
+  }
+}

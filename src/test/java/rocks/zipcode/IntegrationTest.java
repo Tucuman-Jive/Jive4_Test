@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
-import rocks.zipcode.Jive4TestApp;
+import rocks.zipcode.JiveApp;
 import rocks.zipcode.config.AsyncSyncConfiguration;
 import rocks.zipcode.config.EmbeddedSQL;
 
@@ -15,7 +15,7 @@ import rocks.zipcode.config.EmbeddedSQL;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest(classes = { Jive4TestApp.class, AsyncSyncConfiguration.class })
+@SpringBootTest(classes = { JiveApp.class, AsyncSyncConfiguration.class })
 @EmbeddedSQL
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
 public @interface IntegrationTest {

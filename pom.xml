@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>rocks.zipcode</groupId>
-    <artifactId>jive-4-test</artifactId>
+    <artifactId>jive</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Jive 4 Test</name>
-    <description>Description for Jive4_Test</description>
+    <name>Jive</name>
+    <description>Description for Jive</description>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -34,7 +34,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>rocks.zipcode.Jive4TestApp</start-class>
+        <start-class>rocks.zipcode.JiveApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -577,7 +577,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>jive4_test:latest</image>
+                            <image>jive:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -970,9 +970,9 @@
                                 <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                                 <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                                 <driver>org.h2.Driver</driver>
-                                <url>jdbc:h2:file:${project.build.directory}/h2db/db/jive4_test</url>
+                                <url>jdbc:h2:file:${project.build.directory}/h2db/db/jive</url>
                                 <defaultSchemaName></defaultSchemaName>
-                                <username>Jive4_Test</username>
+                                <username>Jive</username>
                                 <password></password>
                                 <referenceUrl>hibernate:spring:rocks.zipcode.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                                 <verbose>true</verbose>
@@ -1069,8 +1069,8 @@
                                 <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                                 <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                                 <driver>com.mysql.cj.jdbc.Driver</driver>
-                                <url>jdbc:mysql://localhost:3306/Jive4_Test</url>
-                                <defaultSchemaName>Jive4_Test</defaultSchemaName>
+                                <url>jdbc:mysql://localhost:3306/Jive</url>
+                                <defaultSchemaName>Jive</defaultSchemaName>
                                 <username>root</username>
                                 <password></password>
                                 <referenceUrl>hibernate:spring:rocks.zipcode.domain?dialect=org.hibernate.dialect.MySQL8Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>

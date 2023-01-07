@@ -1,0 +1,27 @@
+{
+  "jiveApp": {
+    "userMessage": {
+      "home": {
+        "title": "User Messages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Message",
+        "createOrEditLabel": "Create or edit a User Message",
+        "notFound": "No User Messages found"
+      },
+      "created": "A new User Message is created with identifier {{ param }}",
+      "updated": "A User Message is updated with identifier {{ param }}",
+      "deleted": "A User Message is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Message {{ id }}?"
+      },
+      "detail": {
+        "title": "User Message"
+      },
+      "id": "ID",
+      "recipientID": "Recipient ID",
+      "message": "Message",
+      "updatedAt": "Updated At",
+      "userProfile": "User Profile"
+    }
+  }
+}
