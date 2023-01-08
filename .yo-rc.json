@@ -13,7 +13,7 @@
     "clientThemeVariant": "dark",
     "creationTimestamp": 1673109836358,
     "databaseType": "sql",
-    "devDatabaseType": "mysql",
+    "devDatabaseType": "h2Disk",
     "devServerPort": 9060,
     "dtoSuffix": "DTO",
     "enableGradleEnterprise": false,
