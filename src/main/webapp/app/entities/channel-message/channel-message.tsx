@@ -11,6 +11,8 @@ import { IChannelMessage } from 'app/shared/model/channel-message.model';
 import { getEntities } from './channel-message.reducer';
 
 export const ChannelMessage = () => {
+  const [data, setData] = useState(null);
+
   const dispatch = useAppDispatch();
 
   const location = useLocation();
@@ -80,7 +82,7 @@ export const ChannelMessage = () => {
                   </td>
                   <td>
                     {channelMessage.userProfile ? (
-                      <Link to={`/user-profile/${channelMessage.userProfile.id}`}>{channelMessage.userProfile.id}</Link>
+                      <Link to={`/user-profile/${channelMessage.userProfile.id}`}>{channelMessage.userProfile.displayName}</Link>
                     ) : (
                       ''
                     )}
